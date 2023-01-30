@@ -1,0 +1,54 @@
+{
+	"info": {
+		"_postman_id": "cce5edf0-7dec-4dc6-9076-b424354a952b",
+		"name": "Melita",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "4314929"
+	},
+	"item": [
+		{
+			"name": "test",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "melita@melita.com",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"orderId\": 1,\r\n  \"customerDetails\": \r\n    {\r\n      \"name\": \"John\",\r\n      \"surname\": \"Doe\",\r\n      \"email\": \"melita@melita.com\",\r\n      \"identityNumber\": \"123123123\",\r\n      \"phoneNumber\": \"909987897\",\r\n      \"address\": \"New York LA\",\r\n      \"installationAddress\": \"New York LA 101.Street\",\r\n      \"installationDate\": \"2023-02-02T14:45:15\",\r\n      \"timeSlot\": \"4-6\"\r\n    } ,\r\n      \"products\": [\r\n    {\r\n      \"productType\": \"Internet\",\r\n      \"packageType\": \"250 Mbps Internet\"\r\n    },\r\n    {\r\n      \"productType\": \"Mobile\",\r\n      \"packageType\": \"Mobile Prepaid\"\r\n    }\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/order",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"order"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
